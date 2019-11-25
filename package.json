@@ -1,5 +1,5 @@
 {
-	"name": "image-preview",
+	"name": "vue-imgs-previewer",
 	"version": "0.1.0",
 	"private": false,
 	"main": "dist/vue-image-preview.umd.js",
