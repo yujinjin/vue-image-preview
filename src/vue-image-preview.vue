@@ -164,11 +164,13 @@ export default {
 			this.currentIndex = 0;
 			this.imgs = [];
 			this.groupId = null;
-			this.$nextTick(() => {
-				this.swiperInstance.removeAllSlides();
-				this.swiperInstance.destroy(true, true);
-				this.swiperInstance = null;
-			});
+			if (this.swiperInstance) {
+				this.$nextTick(() => {
+					this.swiperInstance.removeAllSlides();
+					this.swiperInstance.destroy(true, true);
+					this.swiperInstance = null;
+				});
+			}
 		}
 	},
 	destroyed() {
